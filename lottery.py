@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: latin-1 -*-
+# -*- coding: utf-8 -*-
 #print u'你猜怎么着?'.encode('utf-8')
 import os
 from random import randint
