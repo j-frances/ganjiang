@@ -8,3 +8,4 @@ z.append(y)
 
 print(x)
 print(z[0])
+print(len(index(z)))
