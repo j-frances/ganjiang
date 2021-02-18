@@ -8,9 +8,9 @@ elif version_info.major == 2:
     except NameError:
         pass
 else:
-    print ("Unknown python version - input function not safe")
+    print("Unknown python version - input function not safe")
 
-options = [i for i in range(1,7)]
+options = [i for i in range(1, 7)]
 print("Welcome to the dice game!")
 intention = input("Enter 'y' to roll!\n")
 while intention:
