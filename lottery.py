@@ -18,12 +18,16 @@ result = []
 intention = 'y'
 options = [i for i in range(1, 100)]
 
+
 def clear():
     print(chr(27) + "[2J")
+    pass
+
 
 for _ in range(1):
     roll = randint(0, 100)
     result.append("{}".format(roll))
+
 
 while intention:
     if intention == "y":
