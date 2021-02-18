@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#print u'你猜怎么着?'.encode('utf-8')
+# print u'你猜怎么着?'.encode('utf-8')
 import os
 from random import randint
 from sys import version_info
@@ -13,12 +13,15 @@ elif version_info.major == 2:
     except NameError:
         pass
 else:
-    print ("Unknown python version - input function not safe")
+    print("Unknown python version - input function not safe")
 
 result = []
 intention = 'y'
-options = [i for i in range(1,100)]
-clear = lambda: os.system('clear')
+options = [i for i in range(1, 100)]
+
+def clear():
+    print(chr(27) + "[2J")
+
 
 for _ in range(1):
     roll = randint(0, 100)
