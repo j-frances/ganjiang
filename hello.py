@@ -7,6 +7,7 @@ z = []
 z.append(y)
 
 print(x)
+print(y)
 print(z)
 print(z[0])
 print(len(z.index()))
